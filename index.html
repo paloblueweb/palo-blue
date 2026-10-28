@@ -82,6 +82,21 @@
       text-transform: uppercase;
       padding: 2px 0;
     }
+    .signup input[type="email"],
+    .signup input[type="email"]:focus,
+    .signup input[type="email"]:active { color: var(--bg); caret-color: var(--bg); background: transparent; }
+    /* Stop the browser's autofill highlight: keep the field blue with cream text */
+    .signup input:-webkit-autofill,
+    .signup input:-webkit-autofill:hover,
+    .signup input:-webkit-autofill:focus,
+    .signup input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 1000px var(--blue) inset !important;
+      box-shadow: 0 0 0 1000px var(--blue) inset !important;
+      -webkit-text-fill-color: var(--bg) !important;
+      caret-color: var(--bg);
+      transition: background-color 9999s ease-out 0s;
+    }
+    .signup input:autofill { background: transparent !important; color: var(--bg) !important; }
     .signup input::placeholder { color: rgba(255, 255, 255, 0.6); opacity: 1; }
     .signup button {
       background: none;
@@ -134,7 +149,7 @@
 
   <main>
     <div class="signup">
-      <p>Join the list and be the first to know when we launch.</p>
+      <p>Join the list and be the first to know when we launch</p>
 
       <!-- Mailchimp signup form (Palo Blue audience) -->
       <form action="https://paloblue.us16.list-manage.com/subscribe/post?u=b2f8be88a1cab6cb0e983c34e&amp;id=716b641add&amp;f_id=001d31e0f0"
