@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SXR1G430S3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SXR1G430S3');
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Palo Blue</title>
@@ -154,7 +163,8 @@
 
       <!-- Mailchimp signup form (Palo Blue audience) -->
       <form action="https://paloblue.us16.list-manage.com/subscribe/post?u=b2f8be88a1cab6cb0e983c34e&amp;id=716b641add&amp;f_id=001d31e0f0"
-            method="post" target="_blank" novalidate>
+            method="post" target="_blank" novalidate
+            onsubmit="if (typeof gtag === 'function') { gtag('event', 'sign_up', { method: 'Mailchimp coming soon form' }); }">
         <input type="email" name="EMAIL" placeholder="Email address" aria-label="Email address" required>
         <div class="hp" aria-hidden="true">
           <input type="text" name="b_b2f8be88a1cab6cb0e983c34e_716b641add" tabindex="-1" value="">
